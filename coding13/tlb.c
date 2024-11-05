@@ -2,8 +2,8 @@
 #include <stdlib.h>
 #include <sys/time.h>
 #include <unistd.h>
-#include <sched.h>
-#include <pthread.h>  // Include pthread for CPU pinning support
+#include <sched.h>      // Needed for CPU pinning functions
+#include <pthread.h>    // Needed for pthread-related functions
 
 // Function to get time in microseconds
 double get_time_in_microseconds() {
@@ -62,3 +62,4 @@ int main(int argc, char *argv[]) {
     free(array);
     return 0;
 }
+
