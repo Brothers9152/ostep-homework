@@ -3,6 +3,7 @@
 #include <sys/time.h>
 #include <unistd.h>
 #include <sched.h>
+#include <pthread.h>  // Include pthread for CPU pinning support
 
 // Function to get time in microseconds
 double get_time_in_microseconds() {
